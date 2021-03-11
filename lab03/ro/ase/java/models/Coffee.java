@@ -1,4 +1,4 @@
-package ro.ase.java.models;
+package lab03.ro.ase.java.models;
 
 import java.io.Serializable;
 

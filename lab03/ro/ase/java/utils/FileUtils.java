@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import ro.ase.java.models.Coffee;
+import lab03.ro.ase.java.models.Coffee;
 
 public class FileUtils {
 	

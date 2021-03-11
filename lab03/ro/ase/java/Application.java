@@ -7,8 +7,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 
-import ro.ase.java.models.Coffee;
-import ro.ase.java.utils.FileUtils;
+import lab03.ro.ase.java.utils.FileUtils;
+import lab03.ro.ase.java.models.Coffee;
+
 
 public class Application {
 	public static void main(String[] args) {
@@ -33,8 +34,7 @@ public class Application {
 		FileUtils utils = new FileUtils();
 	try {
 		utils.saveOrderToTextFile(order, "details.txt");
-		Map<String, Integer> details = utils.getOrderFromTextFile("details.txt")
-;
+		Map<String, Integer> details = utils.getOrderFromTextFile("details.txt");
 		for(Entry<String, Integer> entry : details.entrySet()) {
 			System.out.println(entry.getKey() + ": " +entry.getValue());
 		}
